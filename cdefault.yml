@@ -7,6 +7,7 @@ default:
         - -fdata-sections
 
       Link:
+        - -z noexecstack
         - --specs=nosys.specs
         - --entry=Reset_Handler
         - -Wl,-Map=linker.map,--cref,-print-memory-usage,--gc-sections,--no-warn-rwx-segments
