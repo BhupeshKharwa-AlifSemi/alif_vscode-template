@@ -296,9 +296,9 @@
 #define FLEX_IO_VOLTAGE_1V8                             1
 
 // <o> "CLICKBOARD_ANA" ADC12 instance number <0=> ADC120 <1=> ADC121 <2=> ADC122
-#define BOARD_CLICKBOARD_ANA_ADC12_INSTANCE             1
+#define BOARD_CLICKBOARD_ANA_ADC12_INSTANCE             0
 // <o> "CLICKBOARD_ANA" ADC12 input number <0=> IN0 <1=> IN1 <2=> IN2 <3=> IN3 <4=> IN4 <5=> IN5
-#define BOARD_CLICKBOARD_ANA_ADC12_INPUT                0
+#define BOARD_CLICKBOARD_ANA_ADC12_INPUT                2
 
 // <o> "CLICKBOARD_ANA" ADC24 negative input number <0=> IN0_N <1=> IN1_N <2=> IN2_N <3=> IN3_N
 // <i> WARNING: This option does not change the positive input pin automatically!
