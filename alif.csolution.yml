@@ -54,7 +54,7 @@ solution:
       target-set:
         - set:
           images:
-            - project-context: blinky.release
+            - project-context: blinky.debug
 
     - type: DevKit-E8-HE
       device: Alif Semiconductor::AE822FA0E5597LS0:M55_HE

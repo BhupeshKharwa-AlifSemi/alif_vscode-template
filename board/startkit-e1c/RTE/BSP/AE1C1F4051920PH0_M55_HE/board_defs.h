@@ -101,7 +101,7 @@
 // <o> LPSPI module enabled flag
 #define BOARD_LPSPI_ENABLED                             1
 
-// <o> SPI salve instance number <0-3>
+// <o> SPI slave instance number <0-3>
 #define BOARD_SLAVE_SPI_INSTANCE                        1
 
 // <o> SPI master instance number <0-3>
@@ -266,7 +266,7 @@
 
 // <o> Onboard Switching Devices
 // <i> Sets the #define BOARD_SWITCH_OUTPUT_COUNT in the board_def.h file exported from the
-// Conductor tool. These include relays, solid state relays, transistors, optocopulers, etc.
+// Conductor tool. These include relays, solid state relays, transistors, optocouplers, etc.
 #define BOARD_SWITCH_OUTPUT_COUNT                       0
 
 // <o> OSPI0 Bus Speed
@@ -483,7 +483,7 @@
 #define BOARD_ADC_CLICKBOARD_ANA_GPIO_PORT              0
 // <o> "CLICKBOARD_ANA" GPIO pin number <0=> PIN0 <1=> PIN1 <2=> PIN2 <3=> PIN3 <4=> PIN4 <5=> PIN5
 // <6=> PIN6 <7=> PIN7
-#define BOARD_ADC_CLICKBOARD_ANA_GPIO_PIN               6
+#define BOARD_ADC_CLICKBOARD_ANA_GPIO_PIN               2
 
 // <o> "DAC120_OUT" GPIO port number <0=> GPIO0 <1=> GPIO1 <2=> GPIO2 <3=> GPIO3 <4=> GPIO4 <5=>
 // GPIO5 <6=> GPIO6 <7=> GPIO7 <8=> GPIO8 <9=> GPIO9 <15=> LPGPIO
