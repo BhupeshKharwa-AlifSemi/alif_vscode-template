@@ -50,7 +50,7 @@ solution:
       device: Alif Semiconductor::AE1C1F4051920PH0:M55_HE
       board: Alif Semiconductor::StartKit-E1C
       variables:
-        - BoardLayer: $SolutionDir()$/board/devkit-e1c/board.clayer.yml
+        - BoardLayer: $SolutionDir()$/board/startkit-e1c/board.clayer.yml
       target-set:
         - set:
           images:
