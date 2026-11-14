@@ -23,4 +23,8 @@ project:
     - component: Services:Secure Enclave:core&Source
     - component: Services:Secure Enclave:Initialization Helper&Source
     
+  linker:
+    - regions: "./RTE/Device/$Dname$_$Pname$/app_mem_regions.h"
+    - script: "./RTE/Device/$Dname$_$Pname$/linker_gnu_tcm.ld.src"
+    # - script: "../device/ensemble/RTE/Device/$Dname$_$Pname$/linker_gnu_mram.ld.src"
 

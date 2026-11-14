@@ -43,7 +43,6 @@
             "program": "out/blinky/DevKit-E8-HE/debug/blinky.elf",
             "gdb": "arm-none-eabi-gdb",
             "auxiliaryGdb": true,
-            "preLaunchTask": "CMSIS Load",
             "initCommands": [
                 "monitor reset 0",
                 "tbreak main",
@@ -83,33 +82,8 @@
             "cmsis": {
                 "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
                 "updateConfiguration": "auto"
-            }
-        },
-        {
-            "name": "M55_HE JLink (attach)",
-            "type": "gdbtarget",
-            "request": "attach",
-            "cwd": "${workspaceFolder}/",
-            "program": "out/blinky/DevKit-E8-HE/debug/blinky.elf",
-            "gdb": "arm-none-eabi-gdb",
-            "auxiliaryGdb": true,
-            "initCommands": [
-                ""
-            ],
-            "customResetCommands": [
-                "monitor reset 0",
-                "maintenance flush register-cache",
-                "maintenance flush dcache",
-                "tbreak main",
-                "continue"
-            ],
-            "target": {
-                "port": "3333"
             },
-            "cmsis": {
-                "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
-                "updateConfiguration": "auto"
-            }
+            "preLaunchTask": "CMSIS Load"
         },
         {
             "name": "M55_HP JLink (launch)",
@@ -152,6 +126,32 @@
                     "4445"
                 ],
                 "port": "3334"
+            },
+            "cmsis": {
+                "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
+                "updateConfiguration": "auto"
+            }
+        },
+        {
+            "name": "M55_HE JLink (attach)",
+            "type": "gdbtarget",
+            "request": "attach",
+            "cwd": "${workspaceFolder}/",
+            "program": "out/blinky/DevKit-E8-HE/debug/blinky.elf",
+            "gdb": "arm-none-eabi-gdb",
+            "auxiliaryGdb": true,
+            "initCommands": [
+                ""
+            ],
+            "customResetCommands": [
+                "monitor reset 0",
+                "maintenance flush register-cache",
+                "maintenance flush dcache",
+                "tbreak main",
+                "continue"
+            ],
+            "target": {
+                "port": "3333"
             },
             "cmsis": {
                 "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
